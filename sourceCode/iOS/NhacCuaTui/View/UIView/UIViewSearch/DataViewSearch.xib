@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DataViewSearch" customModule="NhacCuaTui" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="440" height="299"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-7" y="253.5"/>
+        </view>
+        <searchBar contentMode="redraw" id="Jc8-eh-Vij">
+            <rect key="frame" x="0.0" y="0.0" width="296" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+            <textInputTraits key="textInputTraits"/>
+            <point key="canvasLocation" x="365" y="512"/>
+        </searchBar>
+        <searchDisplayController id="Iqc-VX-ajL">
+            <connections>
+                <outlet property="searchBar" destination="Jc8-eh-Vij" id="lZy-DH-7uL"/>
+            </connections>
+        </searchDisplayController>
+    </objects>
+</document>

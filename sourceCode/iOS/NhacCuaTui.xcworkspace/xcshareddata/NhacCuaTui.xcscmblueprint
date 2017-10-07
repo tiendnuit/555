@@ -1,0 +1,34 @@
+{
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "bbcc0e22-05a7-5e4f-a971-913a1f6b7d25" : {
+
+    },
+    "bbcc0e22-05a7-5e4f-a971-913a1f6b7d25++3362" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "bbcc0e22-05a7-5e4f-a971-913a1f6b7d25" : 0,
+    "bbcc0e22-05a7-5e4f-a971-913a1f6b7d25++3362" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "67638013-0CD2-400A-92D7-F729C96BFB20",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "bbcc0e22-05a7-5e4f-a971-913a1f6b7d25" : "",
+    "bbcc0e22-05a7-5e4f-a971-913a1f6b7d25++3362" : "NhacCuaTui2\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "NhacCuaTui",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "NhacCuaTui.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/117.6.131.222:8443\/svn\/nhaccuatui_ios_new",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "bbcc0e22-05a7-5e4f-a971-913a1f6b7d25"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/117.6.131.222:8443\/svn\/nhaccuatui_ios_new",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "bbcc0e22-05a7-5e4f-a971-913a1f6b7d25++3362"
+    }
+  ]
+}

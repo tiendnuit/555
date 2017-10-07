@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DataTableViewCellListBXH" customModule="NhacCuaTui" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="191" height="25"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vì tôi còn sống" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bHG-jy-Tfj">
+                    <rect key="frame" x="30" y="5" width="151" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="1." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XAO-Ls-K7X">
+                    <rect key="frame" x="8" y="7" width="23" height="12"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="XAO-Ls-K7X" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="1xg-hI-YWm"/>
+                <constraint firstItem="XAO-Ls-K7X" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="7" id="8Nc-b8-Sir"/>
+                <constraint firstAttribute="trailing" secondItem="bHG-jy-Tfj" secondAttribute="trailing" constant="10" id="Btc-7F-bgI"/>
+                <constraint firstItem="bHG-jy-Tfj" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="T93-Uz-1pS"/>
+                <constraint firstItem="bHG-jy-Tfj" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="T94-0R-0el"/>
+                <constraint firstAttribute="bottom" secondItem="bHG-jy-Tfj" secondAttribute="bottom" constant="4" id="b1Y-TM-DdC"/>
+                <constraint firstAttribute="bottom" secondItem="XAO-Ls-K7X" secondAttribute="bottom" constant="6" id="cge-Ii-HhP"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="nameTitleSong" destination="bHG-jy-Tfj" id="Nkz-ga-XPj"/>
+                <outlet property="sttText" destination="XAO-Ls-K7X" id="4Rh-0U-aIK"/>
+            </connections>
+            <point key="canvasLocation" x="259.5" y="275.5"/>
+        </view>
+    </objects>
+</document>

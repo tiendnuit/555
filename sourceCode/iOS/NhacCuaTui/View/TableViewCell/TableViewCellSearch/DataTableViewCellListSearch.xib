@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DataTableViewCellListSearch" customModule="NhacCuaTui" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="209" height="21"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EHu-YR-4Hg">
+                    <rect key="frame" x="2" y="2" width="17" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="22" id="3BU-3L-xmr"/>
+                        <constraint firstAttribute="height" constant="22" id="ybm-Db-7AV"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QNf-5e-tds">
+                    <rect key="frame" x="25" y="3" width="158" height="14"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="QNf-5e-tds" secondAttribute="bottom" constant="4" id="628-kf-dWF"/>
+                <constraint firstItem="QNf-5e-tds" firstAttribute="leading" secondItem="EHu-YR-4Hg" secondAttribute="trailing" constant="6" id="d8H-gM-0Mp"/>
+                <constraint firstItem="EHu-YR-4Hg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="2" id="e3N-qg-VD4"/>
+                <constraint firstItem="QNf-5e-tds" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="3" id="tpU-Jw-zQ5"/>
+                <constraint firstItem="EHu-YR-4Hg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="2" id="vVS-7w-c5F"/>
+                <constraint firstAttribute="bottom" secondItem="EHu-YR-4Hg" secondAttribute="bottom" constant="2" id="xZ4-j6-Cbq"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="imageLogo" destination="EHu-YR-4Hg" id="cug-fy-YLU"/>
+                <outlet property="nameObject" destination="QNf-5e-tds" id="pKf-Kc-dll"/>
+            </connections>
+            <point key="canvasLocation" x="301.5" y="291.5"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DataViewNCT" customModule="NhacCuaTui" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="440" height="230"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Nhạc của tôi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pmv-dP-Iv1">
+                    <rect key="frame" x="8" y="7" width="129" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Nf-BC-zQE">
+                    <rect key="frame" x="0.0" y="31.5" width="440" height="0.0"/>
+                    <color key="backgroundColor" red="0.71711253156565657" green="0.71711253156565657" blue="0.71711253156565657" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_linear.png" translatesAutoresizingMaskIntoConstraints="NO" id="TcU-mI-zIC">
+                    <rect key="frame" x="0.0" y="0.0" width="440" height="31"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="31" id="yfw-fD-IuD"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="4Nf-BC-zQE" firstAttribute="top" secondItem="Pmv-dP-Iv1" secondAttribute="bottom" constant="8" id="37D-hj-KIb"/>
+                <constraint firstItem="Pmv-dP-Iv1" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="7" id="3bI-2d-TRU"/>
+                <constraint firstItem="TcU-mI-zIC" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Lkl-JV-koS"/>
+                <constraint firstAttribute="bottom" secondItem="4Nf-BC-zQE" secondAttribute="bottom" constant="164" id="XNt-hE-zFu"/>
+                <constraint firstAttribute="trailing" secondItem="4Nf-BC-zQE" secondAttribute="trailing" id="dDk-Gv-2ud"/>
+                <constraint firstItem="4Nf-BC-zQE" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="irO-VA-0mq"/>
+                <constraint firstAttribute="trailing" secondItem="TcU-mI-zIC" secondAttribute="trailing" id="jFA-zf-6FM"/>
+                <constraint firstItem="Pmv-dP-Iv1" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="mhl-Mk-SSZ"/>
+                <constraint firstItem="4Nf-BC-zQE" firstAttribute="top" secondItem="TcU-mI-zIC" secondAttribute="bottom" id="sSn-Od-K9d"/>
+                <constraint firstItem="TcU-mI-zIC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="uDh-83-6ZJ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="248" y="323"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="background_linear.png" width="808" height="55"/>
+    </resources>
+</document>

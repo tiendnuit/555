@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DataViewBXH" customModule="NhacCuaTui" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="440" height="230"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_linear.png" translatesAutoresizingMaskIntoConstraints="NO" id="kTi-0L-kiu">
+                    <rect key="frame" x="0.0" y="0.0" width="440" height="31"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="31" id="NX9-lY-K8q"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="ចំណាត់ថ្នាក់" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6iZ-Xq-u91">
+                    <rect key="frame" x="15" y="5" width="114" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MZ7-f2-v31">
+                    <rect key="frame" x="0.0" y="31" width="440" height="199"/>
+                </scrollView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="វៀតណាម" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K3b-5n-cts">
+                    <rect key="frame" x="326" y="5" width="77" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.20784313730000001" green="0.74117647060000003" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NIr-J8-6Em">
+                    <rect key="frame" x="411" y="6" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="BkA-Xm-ds6"/>
+                        <constraint firstAttribute="height" constant="20" id="ac0-A5-Uhf"/>
+                    </constraints>
+                    <state key="normal" image="btn_choose.png"/>
+                    <connections>
+                        <action selector="actionDropTable:" destination="iN0-l3-epB" eventType="touchUpInside" id="uKO-E8-4ZF"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="K3b-5n-cts" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="0b8-WX-EV5"/>
+                <constraint firstItem="MZ7-f2-v31" firstAttribute="top" secondItem="K3b-5n-cts" secondAttribute="bottom" constant="5" id="4Ga-gG-JfW"/>
+                <constraint firstItem="MZ7-f2-v31" firstAttribute="top" secondItem="kTi-0L-kiu" secondAttribute="bottom" id="6eF-eG-x6Z"/>
+                <constraint firstAttribute="trailing" secondItem="NIr-J8-6Em" secondAttribute="trailing" constant="9" id="7eO-Y0-TS0"/>
+                <constraint firstAttribute="trailing" secondItem="kTi-0L-kiu" secondAttribute="trailing" id="9oG-wf-LE6"/>
+                <constraint firstItem="6iZ-Xq-u91" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="BYb-oS-g05"/>
+                <constraint firstAttribute="bottom" secondItem="MZ7-f2-v31" secondAttribute="bottom" id="DYm-nN-1Yz"/>
+                <constraint firstItem="kTi-0L-kiu" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Pna-44-kc6"/>
+                <constraint firstItem="NIr-J8-6Em" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="6" id="SKo-Wn-Iwk"/>
+                <constraint firstAttribute="trailing" secondItem="MZ7-f2-v31" secondAttribute="trailing" id="SnR-AQ-Tv1"/>
+                <constraint firstItem="MZ7-f2-v31" firstAttribute="top" secondItem="NIr-J8-6Em" secondAttribute="bottom" constant="5" id="WcH-co-gh7"/>
+                <constraint firstItem="kTi-0L-kiu" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Wit-Jg-bNr"/>
+                <constraint firstItem="MZ7-f2-v31" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="h4R-ZY-3ZA"/>
+                <constraint firstItem="6iZ-Xq-u91" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="hx2-2m-BGT"/>
+                <constraint firstItem="NIr-J8-6Em" firstAttribute="leading" secondItem="K3b-5n-cts" secondAttribute="trailing" constant="8" id="tIJ-Oc-1yK"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="nameCountry" destination="K3b-5n-cts" id="WSG-Hm-353"/>
+                <outlet property="scrollViewBXH" destination="MZ7-f2-v31" id="HV0-6s-qne"/>
+            </connections>
+            <point key="canvasLocation" x="313" y="341"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="background_linear.png" width="808" height="55"/>
+        <image name="btn_choose.png" width="13" height="11"/>
+    </resources>
+</document>

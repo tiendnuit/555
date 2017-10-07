@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DataViewUser" customModule="________________" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="460" height="250"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="បញ្ជីបទចំរៀងរបស់ខ្ញុំ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fiv-Z9-KYh">
+                    <rect key="frame" x="59" y="6" width="321" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="18" id="Be6-1I-pxG"/>
+                        <constraint firstAttribute="width" constant="321" id="eSb-Eh-EBE"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FFi-aO-kVQ">
+                    <rect key="frame" x="404" y="4" width="25" height="23"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="25" id="Sff-l1-kYK"/>
+                        <constraint firstAttribute="height" constant="23" id="WGG-Vt-beI"/>
+                    </constraints>
+                    <state key="normal" image="ic_setup.png"/>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_linear.png" translatesAutoresizingMaskIntoConstraints="NO" id="HkL-zh-euA">
+                    <rect key="frame" x="0.0" y="0.0" width="460" height="31"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="31" id="ihF-H9-eoK"/>
+                        <constraint firstAttribute="width" constant="460" id="kfp-iK-Rd3"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="HkL-zh-euA" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="1E9-3e-RbX"/>
+                <constraint firstItem="HkL-zh-euA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="9m8-hs-ZDQ"/>
+                <constraint firstItem="FFi-aO-kVQ" firstAttribute="leading" secondItem="fiv-Z9-KYh" secondAttribute="trailing" constant="24" id="M2u-b2-581"/>
+                <constraint firstAttribute="trailing" secondItem="FFi-aO-kVQ" secondAttribute="trailing" constant="31" id="XMK-25-dpJ"/>
+                <constraint firstAttribute="trailing" secondItem="HkL-zh-euA" secondAttribute="trailing" id="ZXs-lX-lCI"/>
+                <constraint firstItem="fiv-Z9-KYh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="59" id="fsd-mf-DuO"/>
+                <constraint firstItem="fiv-Z9-KYh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="6" id="jAO-KK-F2l"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="varButtonSetting" destination="FFi-aO-kVQ" id="dpN-Q9-Khl"/>
+            </connections>
+            <point key="canvasLocation" x="247" y="301"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="background_linear.png" width="808" height="55"/>
+        <image name="ic_setup.png" width="27" height="27"/>
+    </resources>
+</document>

@@ -1,0 +1,6 @@
+framework module Pods_________________ {
+  umbrella header "Pods-បទចំរៀងរបស់ខ្ញុំ-umbrella.h"
+
+  export *
+  module * { export * }
+}

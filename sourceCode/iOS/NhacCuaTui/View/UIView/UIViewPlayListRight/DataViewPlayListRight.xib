@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DataViewPlayListRight" customModule="NhacCuaTui" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="299"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PUy-Zy-xSx">
+                    <rect key="frame" x="0.0" y="34" width="200" height="265"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="92i-SJ-yEf">
+                    <rect key="frame" x="0.0" y="0.0" width="200" height="34"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bpf-UR-iPP">
+                            <rect key="frame" x="8" y="9" width="149" height="17"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="149" id="AQd-87-rBY"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N7o-1l-SVG">
+                            <rect key="frame" x="178" y="11" width="12" height="12"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="12" id="1N3-u1-dGX"/>
+                                <constraint firstAttribute="width" constant="12" id="hXT-K6-qqg"/>
+                            </constraints>
+                            <state key="normal" image="button_close.png"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="tintColor" red="0.14558047421692299" green="0.21942470999245045" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="N7o-1l-SVG" secondAttribute="bottom" constant="11" id="4tM-sf-ceN"/>
+                        <constraint firstAttribute="height" constant="34" id="91J-Xf-faE"/>
+                        <constraint firstAttribute="bottom" secondItem="bpf-UR-iPP" secondAttribute="bottom" constant="8" id="9MQ-TO-WNP"/>
+                        <constraint firstItem="bpf-UR-iPP" firstAttribute="leading" secondItem="92i-SJ-yEf" secondAttribute="leading" constant="8" id="T0J-hl-K8b"/>
+                        <constraint firstItem="bpf-UR-iPP" firstAttribute="top" secondItem="92i-SJ-yEf" secondAttribute="top" constant="9" id="XIO-iM-uEM"/>
+                        <constraint firstAttribute="trailing" secondItem="N7o-1l-SVG" secondAttribute="trailing" constant="10" id="bpx-uf-90i"/>
+                        <constraint firstItem="N7o-1l-SVG" firstAttribute="top" secondItem="92i-SJ-yEf" secondAttribute="top" constant="11" id="dLR-cA-kd2"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="92i-SJ-yEf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="CDm-ge-mrM"/>
+                <constraint firstItem="PUy-Zy-xSx" firstAttribute="top" secondItem="92i-SJ-yEf" secondAttribute="bottom" id="UIg-jv-iHl"/>
+                <constraint firstAttribute="trailing" secondItem="92i-SJ-yEf" secondAttribute="trailing" id="Wxv-P0-swK"/>
+                <constraint firstAttribute="trailing" secondItem="PUy-Zy-xSx" secondAttribute="trailing" id="Zsb-bT-sE8"/>
+                <constraint firstItem="92i-SJ-yEf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="buG-38-DKr"/>
+                <constraint firstAttribute="bottom" secondItem="PUy-Zy-xSx" secondAttribute="bottom" id="noW-re-5yA"/>
+                <constraint firstItem="PUy-Zy-xSx" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="uZh-IP-8bu"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="UIBackground" destination="92i-SJ-yEf" id="SWy-g6-RH4"/>
+                <outlet property="buttonClose" destination="N7o-1l-SVG" id="QV8-2d-qvp"/>
+                <outlet property="nameTitle" destination="bpf-UR-iPP" id="sse-9c-ae8"/>
+                <outlet property="tableSong" destination="PUy-Zy-xSx" id="QT9-Aj-cHY"/>
+            </connections>
+            <point key="canvasLocation" x="556" y="268.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="button_close.png" width="256" height="256"/>
+    </resources>
+</document>

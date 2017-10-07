@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DataTableViewCellLeft" customModule="________________" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="101" height="28"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_home.png" translatesAutoresizingMaskIntoConstraints="NO" id="8Fw-98-xdO">
+                    <rect key="frame" x="8" y="4" width="20" height="19"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="19" id="0SD-b7-7Wu"/>
+                        <constraint firstAttribute="width" constant="20" id="EVM-ek-ZQQ"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="ទំព័រដើម" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N2e-o9-9HU">
+                    <rect key="frame" x="30" y="5" width="61" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="N2e-o9-9HU" secondAttribute="bottom" constant="5" id="AF3-W9-bEW"/>
+                <constraint firstItem="8Fw-98-xdO" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="N88-4s-Tmx"/>
+                <constraint firstItem="N2e-o9-9HU" firstAttribute="leading" secondItem="8Fw-98-xdO" secondAttribute="trailing" constant="2" id="Sgd-aY-PZp"/>
+                <constraint firstAttribute="bottom" secondItem="8Fw-98-xdO" secondAttribute="bottom" constant="5" id="hdt-0q-AeF"/>
+                <constraint firstItem="N2e-o9-9HU" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="hp2-U8-JXp"/>
+                <constraint firstItem="8Fw-98-xdO" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="4" id="kqh-Ak-Vp9"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="image_icon" destination="8Fw-98-xdO" id="3K4-W6-Cbb"/>
+                <outlet property="text_title" destination="N2e-o9-9HU" id="sr5-rc-gTB"/>
+            </connections>
+            <point key="canvasLocation" x="572.5" y="209"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_home.png" width="24" height="23"/>
+    </resources>
+</document>

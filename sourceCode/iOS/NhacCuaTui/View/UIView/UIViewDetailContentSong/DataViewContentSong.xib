@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DataViewContentSong" customModule="NhacCuaTui" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="damvinhhung.png" translatesAutoresizingMaskIntoConstraints="NO" id="tgp-nA-iaR">
+                    <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="tgp-nA-iaR" secondAttribute="bottom" id="FKT-L5-dRd"/>
+                <constraint firstItem="tgp-nA-iaR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="a5R-Hu-MDm"/>
+                <constraint firstItem="tgp-nA-iaR" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="hTL-qE-BJf"/>
+                <constraint firstAttribute="trailing" secondItem="tgp-nA-iaR" secondAttribute="trailing" id="nnD-X4-FK5"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="486" y="328"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="damvinhhung.png" width="145" height="136"/>
+    </resources>
+</document>
